@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var movies = ["moulin rouge", "clueless", "mean girls", "drop dead fred", "breakfast at tiffanys", "cruel intentions", "donnie darko", "a night at the roxbury"];
+	var movies = ["the great gatsby", "clueless", "mean girls", "drop dead fred", "breakfast at tiffanys", "cruel intentions", "pulp fiction", "a night at the roxbury"];
 
 	// Add buttons for original movies array
 	function renderButtons() {
@@ -21,7 +21,7 @@ $(document).ready(function () {
 	});
 
 
-	// Getting gifs from api... onto html
+	// Getting gifs from api onto html
 	$("button").on("click", function () {
 		var movie = $(this).attr("data-movie");
 		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
